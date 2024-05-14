@@ -12,7 +12,7 @@ class Config(object):
     AUTH_USERS = []
     AUTH_USERS.extend([7030439873 -1001733753424 851301576])
   
-# array , simplest method was AUTH_USERS = [] ; AUTH_USERS.extend(7030439873 -1001733753424 851301576) 🤣
+# array , simplest method was AUTH_USERS = [] ; AUTH_USERS.extend(7030439873, -1001733753424, 851301576) 🤣
     # array to store the channel ID who are authorized to use the bot
     # dont u fucking remove this id 😤
     TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "6654059347:AAEIlM2LmWWWewzeHSBqu1PAP-NibYPh3FQ")
