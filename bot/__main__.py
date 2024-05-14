@@ -177,7 +177,7 @@ if __name__ == "__main__" :
     async def restarter(app, message):
         data.clear()
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @Rimuru_AS")
+            return await message.reply_text("You are not authorised to use this bot contact @Mr_Bankaiiii")
         query = await message.reply_text("Successfully cleared Queue ...📚")
       
       
@@ -196,7 +196,7 @@ if __name__ == "__main__" :
     @app.on_message(filters.incoming & (filters.photo))
     async def help_message(app, message):
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @Rimuru_AS")
+            return await message.reply_text("You are not authorised to use this bot contact @Mr_Bankaiiii")
         os.system('rm thumb.jpg')
         await message.download(file_name='/app/thumb.jpg')
         await message.reply_text('Thumbnail Added 🎴')
