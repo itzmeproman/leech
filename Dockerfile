@@ -1,20 +1,10 @@
-# Use the base image artemisfowl004/vid-compress
-FROM artemisfowl004/vid-compress
+FROM python:3.9.2-slim-buster
+RUN mkdir /bot && chmod 777 /bot
+WORKDIR /bot
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev ffmpeg mediainfo
+RUN apt-get install neofetch wget -y -f
 
-# Set environment variables
-ENV TZ=Asia/Kolkata \
-    DEBIAN_FRONTEND=noninteractive \
-    MY_CUSTOM_VARIABLE=my_value
-
-# Set the working directory
-WORKDIR /app
-
-# Copy the requirements file and install dependencies
-COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application code
 COPY . .
-
-# Set the command to run your custom script or application
-CMD ["bash","start.sh"]
+RUN pip3 install -r requirements.txt
+CMD ["bash","run.sh"]
