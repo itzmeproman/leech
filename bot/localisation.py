@@ -23,7 +23,7 @@ class Localisation:
     
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
     
-    COMPRESS_SUCCESS = "Encoded by Anime Sensei"
+    COMPRESS_SUCCESS = "Encoded by Anime Compass"
 
     COMPRESS_PROGRESS = "⏳ ETA: {}\n🚀 Progress: {}%"
 
@@ -35,7 +35,7 @@ class Localisation:
     
     SAVED_RECVD_DOC_FILE = "Downloaded Successfully...✅"
     
-    CUSTOM_CAPTION_UL_FILE = " "
+    CUSTOM_CAPTION_UL_FILE = "Encoded By Anime compass"
     
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found...💔"
     
