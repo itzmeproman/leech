@@ -88,7 +88,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Owner', url='https://t.me/Rimuru_AS')
+                    InlineKeyboardButton('Owner', url='https://t.me/Mr_Bankaiiii')
                 ]
             ]
         ),
