@@ -49,7 +49,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     resolution.append("1280x720")
     preset.append("veryfast")
     audio_b.append("35k")
-    file_genertor_command = f'ffmpeg -hide_banner -loglevel quiet -progress "{progress}" -i "{video_file}"  -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]}  "{out_put_file_name}" -y'
+    file_genertor_command = f'ffmpeg -metadata:s:v:0 title="[Anime Compass] : (This Episode)" -metadata:s:a:0 title="[Telegram: @Anime_Compass]" -metadata:s:a:1 title="[Telegram: @Anime_Compass]" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title="@Anime_Compass" -metadata author="@Anime_Compass" -metadata:s:s title="@Anime_Compass" -metadata:s:a title="@Anime_Compass" -metadata:s:v title="@Anime_compass" -c:v libx264 -pix_fmt yuv420p10le -preset veryfast -s 845x480 -crf 28 -c:a aac -ac 2 -vbr 2 -ab 64k -c:s copy -movflags +faststart -vf "drawtext=fontfile=Imprima_Love.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:text=Anime Compass" "{out_put_file_name}" -y'
  #Done !!
     COMPRESSION_START_TIME = time.time()
     process = await asyncio.create_subprocess_shell(
