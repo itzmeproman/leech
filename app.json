@@ -1,17 +1,17 @@
 {
-  "name": "UltronEncoderBot",
-  "description": "Telegram's best Video Encoder Bot",
-  "logo": "https://telegra.ph/file/0e369e097843b0dc4b771.jpg",
+  "name": "VideoCompressBot",
+  "description": "Telegram's best Video Compress Bot",
+  "logo": "https://telegra.ph/file/b687febf32e4d583fb1d4.jpg",
   "keywords": [
     "telegram",
     "best",
     "video",
-    "Encoder",
+    "compress",
     "bot"
   ],
   "success_url": "https://t.me/linux_repo",
   "website": "https://t.me/Discovery_Updates",
-  "repository": "https://github.com/GitXBot101/GroupEncoder",
+  "repository": "https://github.com/AbirHasan2005/VideoCompress",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable VARs when in ENV mode",
@@ -19,37 +19,37 @@
     },
     "SESSION_NAME": {
       "description": "Keep this default",
-      "value": "UltronEncoderBot",
+      "value": "AHCompressBot",
       "required": true
     },
     "TG_BOT_TOKEN": {
       "description": "Your bot token, as a string. Get this from @BotFather",
-      "value": "6654059347:AAEIlM2LmWWWewzeHSBqu1PAP-NibYPh3FQ",
+      "value": "",
       "required": true
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "19863702",
+      "value": "",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "6d48cb362a97a43cfc944fd5c0f917f9",
+      "value": "",
       "required": true
     },
     "BOT_USERNAME": {
       "description": "Your Bot Username. Without `@` before Username!",
-      "value": "tested_robot",
+      "value": "",
       "required": true
     },
     "LOG_CHANNEL": {
       "description": "Your Bot's Log Channel's Username. For Help ask in @linux_repo",
-      "value": "a363672",
+      "value": "",
       "required": true
     },
     "AUTH_USERS": {
       "description": "Allow only pre-defined users to use this bot as Sudo User. Separate with Space. Just for using Admin Commands.",
-      "value": "-1001733753424 851301576 7030439873",
+      "value": "1666551439",
       "required": true
     }
   },
