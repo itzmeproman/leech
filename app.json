@@ -24,7 +24,7 @@
     },
     "TG_BOT_TOKEN": {
       "description": "Your bot token, as a string. Get this from @BotFather",
-      "value": "6552074969:AAGDmeIZzHgd6o0c3N2L6E6hkk-k7eLumLY",
+      "value": "6654059347:AAEIlM2LmWWWewzeHSBqu1PAP-NibYPh3FQ",
       "required": true
     },
     "APP_ID": {
@@ -39,17 +39,17 @@
     },
     "BOT_USERNAME": {
       "description": "Your Bot Username. Without `@` before Username!",
-      "value": "pro_encoder_xbot",
+      "value": "tested_robot",
       "required": true
     },
     "LOG_CHANNEL": {
       "description": "Your Bot's Log Channel's Username. For Help ask in @linux_repo",
-      "value": "encoderbotlogsss",
+      "value": "a363672",
       "required": true
     },
     "AUTH_USERS": {
       "description": "Allow only pre-defined users to use this bot as Sudo User. Separate with Space. Just for using Admin Commands.",
-      "value": "6885162066",
+      "value": "-1001733753424 851301576 7030439873",
       "required": true
     }
   },
