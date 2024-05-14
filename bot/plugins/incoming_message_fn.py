@@ -17,12 +17,12 @@ from bot import (
   data,
   app  
 )
-from bot.helper_funcs.ffmpeg import (
+from bot.helper_funcs.ffmpeg.py import (
   convert_video,
   media_info,
   take_screen_shot
 )
-from bot.helper_funcs.display_progress import (
+from bot.helper_funcs.display_progress.py import (
   progress_for_pyrogram,
   TimeFormatter,
   humanbytes
