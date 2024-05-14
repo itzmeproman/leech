@@ -11,7 +11,7 @@ class Config(object):
      # Get these values from my.telegram.org
     AUTH_USERS = set(
         int(x) for x in get_config(
-            "AUTH_USERS", "7030439873 -1001733753424",
+            "AUTH_USERS", "7030439873",
             should_prompt=True
         )
     )
